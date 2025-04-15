@@ -36,6 +36,7 @@ export async function signUp(credentials: SignUpCredentials): Promise<User> {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
+                "Accept": "application/json"
             },
             body: JSON.stringify(credentials),
         });
